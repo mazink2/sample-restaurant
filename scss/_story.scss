@@ -1,4 +1,68 @@
 #story {
-    margin-bottom: 150px;
+    padding: 100px 20px;
+    height: 600px;
+    background-color: rgb(252, 252, 252);
     
+    .container {
+        width: 70%;
+        margin: 0 auto;
+
+        .left-box {
+            float: left;
+            width: 50%;
+            height: 600px;
+            position: relative;
+
+            .pre-title {
+                text-transform: uppercase;
+                letter-spacing: 8px;
+                font-size: 0.7rem;
+                font-weight: 700;
+                color: rgb(255, 255, 255);
+            }
+
+            .title {
+                font-size: 1.8rem;
+                text-transform: capitalize;
+                font-weight: 700;
+            }
+
+            .info {
+                color: rgb(100, 85, 85);
+                line-height: 2;
+                font-size: 1rem;
+                font-weight: 400;
+                letter-spacing: 2px;
+            }
+
+            .btn-reservation {
+                border: 1px solid rgb(110, 102, 102);
+                text-transform: uppercase;
+                font-family: 'Martel', serif;
+                font-weight: 700;
+                padding: 20px 25px;
+                width: 150px;
+                color: #000;
+                margin-left: 10px;
+                position: absolute;
+                bottom: 50px;
+            }
+        }
+
+        .right-box {
+            float: right;
+            width: 45%;
+            height: 600px;
+            margin-left: 5%;
+
+            .story-img {
+                background: url(../img/story.jpg);
+                background-position: center center;
+                background-size: cover;
+                width: 400px;
+                height: 550px;
+                margin: auto auto;
+            }
+        }
+    }
 }

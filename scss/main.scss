@@ -1,5 +1,6 @@
 @import 'home';
 @import 'story';
+@import 'menu';
 
 
 html,
@@ -10,10 +11,12 @@ body {
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
-	overflow-x: hidden;
-}
-
-body {
+    overflow-x: hidden;
     margin: 0;
 }
 
+h2,
+h4 {
+    font-family: 'Martel', serif;
+    font-weight: 400;
+}
