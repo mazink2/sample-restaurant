@@ -20,3 +20,22 @@ h4 {
     font-family: 'Martel', serif;
     font-weight: 400;
 }
+
+h5, h6 {
+	margin: 0;
+}
+
+.pre-title {
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-size: 0.7rem;
+	font-weight: 700;
+	color: rgb(172, 133, 133);
+}
+
+.title {
+	font-size: 1.8rem;
+	text-transform: capitalize;
+	font-weight: 700;
+	margin: 0;
+}
