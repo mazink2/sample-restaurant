@@ -1,0 +1,42 @@
+#review {
+    padding: 100px 20px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    
+    .container {
+        width: 70%;
+        margin: 0 auto;
+
+        .right-box {
+            float: right;
+            width: 50%;
+            height: 600px;
+            position: relative;
+
+
+            .info {
+                color: rgb(100, 85, 85);
+                line-height: 2;
+                font-size: 1rem;
+                font-weight: 400;
+                letter-spacing: 2px;
+            }
+        }
+
+        .left-box {
+            float: left;
+            width: 45%;
+            height: 600px;
+            margin-left: 5%;
+
+            .review-img {
+                background: url(../img/story.jpg);
+                background-position: center center;
+                background-size: cover;
+                width: 400px;
+                height: 550px;
+                margin: auto auto;
+            }
+        }
+    }
+}
