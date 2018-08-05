@@ -1,10 +1,11 @@
 #review {
-    padding: 100px 20px;
-    height: 600px;
+    padding: 110px 20px;
+    padding-bottom: 0;
+    height: 700px;
     background-color: rgb(255, 255, 255);
     
     .container {
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
 
         .right-box {
@@ -12,30 +13,62 @@
             width: 50%;
             height: 600px;
             position: relative;
+            text-align: right;
 
+            .pre-title {
+                margin-top: 100px;
+            }
+
+            .title {
+                color: rgb(22, 20, 20);
+            }
+
+            .quote {
+                color: #000;
+                font-weight: 700;
+                padding-top: 20px;
+            }
 
             .info {
-                color: rgb(100, 85, 85);
+                color: rgb(153, 127, 127);
                 line-height: 2;
                 font-size: 1rem;
                 font-weight: 400;
                 letter-spacing: 2px;
+            }
+
+            .name {
+                margin-top: 75px;
+
+                strong {
+                    color: #000;
+                }
+
+                em {
+                    font-weight: 700;
+                    color: rgb(153, 127, 127);
+                }
             }
         }
 
         .left-box {
             float: left;
             width: 45%;
-            height: 600px;
+            height: 700px;
             margin-left: 5%;
+            position: relative;
 
             .review-img {
-                background: url(../img/story.jpg);
+                background: url(../img/chef.png);
                 background-position: center center;
                 background-size: cover;
-                width: 400px;
-                height: 550px;
+                width: 500px;
+                height: 650px;
                 margin: auto auto;
+                position: absolute;
+                bottom: 0;
+                -webkit-filter: drop-shadow(5px 5px 5px #222);
+                filter: drop-shadow(45px 35px 35px rgba(204, 195, 195, 0.918)); 
             }
         }
     }

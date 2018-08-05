@@ -25,7 +25,7 @@
             display: inline-block;
             z-index: 0;
             transform: scale(1.15);
-            opacity: 0.7;
+            opacity: 0.75;
             background-color: #000;
 
 
@@ -59,19 +59,6 @@
                 transform: scale(1.03);
                 transition: all 0.3s ease-in-out;
             }
-
-            // .gradient {
-            //     z-index: 1;
-            //     content: '';
-            //     height: 100%;
-            //     width: 100%;
-            //     background: rgba(87, 86, 92, 0.37);
-            //     transition: all 0.3s ease-in-out;
-            // }
-
-            // .gradient:hover {
-            //     background: rgba(87, 86, 92, 0);
-            // }
 
         }
     }
