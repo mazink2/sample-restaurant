@@ -4,39 +4,50 @@
     background-color: rgb(255, 255, 255);
     
     .container {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
 
         .left-box {
             float: left;
-            width: 50%;
+            width: 55%;
             height: 600px;
             position: relative;
 
-            .title {
-                color: rgb(22, 20, 20);
-            }
+            .left-box-container{
+                width: 100%;
+                margin: 0 auto;
+                
+                .text {
+                    padding-left: 100px;
 
-            .info {
-                color: rgb(100, 85, 85);
-                line-height: 2;
-                font-size: 1rem;
-                font-weight: 400;
-                letter-spacing: 2px;
-            }
-
-            .btn-reservation {
-                border: 1px solid rgb(110, 102, 102);
-                text-transform: uppercase;
-                font-family: 'Martel', serif;
-                font-weight: 700;
-                padding: 20px 25px;
-                width: 150px;
-                color: #000;
-                margin-left: 5px;
-                display: block;
-                position: absolute;
-                bottom: 50px;
+                    .title {
+                        color: rgb(22, 20, 20);
+                    }
+                    
+                    .info {
+                        color: rgb(100, 85, 85);
+                        line-height: 2;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        letter-spacing: 2px;
+                        width: 100%;
+                    }
+                    
+                    .btn-reservation {
+                        border: 1px solid rgb(110, 102, 102);
+                        text-transform: uppercase;
+                        font-family: 'Martel', serif;
+                        font-weight: 700;
+                        padding: 20px 25px;
+                        width: 150px;
+                        color: #000;
+                        // margin-left: 5px;
+                        display: block;
+                        position: absolute;
+                        bottom: 50px;
+                        text-align: center;
+                    }
+                }
             }
         }
 
@@ -44,7 +55,7 @@
             float: right;
             width: 45%;
             height: 600px;
-            margin-left: 5%;
+            // margin-left: 5%;
 
             .story-img {
                 background: url(../img/story.jpg);

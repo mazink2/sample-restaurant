@@ -79,38 +79,43 @@
   height: 600px;
   background-color: white; }
   #story .container {
-    width: 70%;
+    width: 100%;
     margin: 0 auto; }
     #story .container .left-box {
       float: left;
-      width: 50%;
+      width: 55%;
       height: 600px;
       position: relative; }
-      #story .container .left-box .title {
-        color: #161414; }
-      #story .container .left-box .info {
-        color: #645555;
-        line-height: 2;
-        font-size: 1rem;
-        font-weight: 400;
-        letter-spacing: 2px; }
-      #story .container .left-box .btn-reservation {
-        border: 1px solid #6e6666;
-        text-transform: uppercase;
-        font-family: 'Martel', serif;
-        font-weight: 700;
-        padding: 20px 25px;
-        width: 150px;
-        color: #000;
-        margin-left: 5px;
-        display: block;
-        position: absolute;
-        bottom: 50px; }
+      #story .container .left-box .left-box-container {
+        width: 100%;
+        margin: 0 auto; }
+        #story .container .left-box .left-box-container .text {
+          padding-left: 100px; }
+          #story .container .left-box .left-box-container .text .title {
+            color: #161414; }
+          #story .container .left-box .left-box-container .text .info {
+            color: #645555;
+            line-height: 2;
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            width: 100%; }
+          #story .container .left-box .left-box-container .text .btn-reservation {
+            border: 1px solid #6e6666;
+            text-transform: uppercase;
+            font-family: 'Martel', serif;
+            font-weight: 700;
+            padding: 20px 25px;
+            width: 150px;
+            color: #000;
+            display: block;
+            position: absolute;
+            bottom: 50px;
+            text-align: center; }
     #story .container .right-box {
       float: right;
       width: 45%;
-      height: 600px;
-      margin-left: 5%; }
+      height: 600px; }
       #story .container .right-box .story-img {
         background: url(../img/story.jpg);
         background-position: center center;
@@ -406,6 +411,25 @@
             color: #5a5757;
             font-weight: 400; }
 
+@media screen and (max-width: 1171px) {
+  #story {
+    padding: 100px 20px;
+    height: 600px; }
+    #story .container .left-box {
+      width: 55%;
+      height: 540px; }
+      #story .container .left-box .left-box-container .text {
+        padding-left: 50px; }
+        #story .container .left-box .left-box-container .text .info {
+          width: 95%; }
+        #story .container .left-box .left-box-container .text .btn-reservation {
+          padding: 20px 25px;
+          width: 150px;
+          margin-left: 5px;
+          bottom: 0px; }
+    #story .container .right-box {
+      height: 540px; } }
+
 @media screen and (max-width: 991px) {
   #home .menu-full {
     display: none; }
@@ -428,7 +452,34 @@
     #home .text-box h2 {
       font-size: 2.7rem; }
     #home .text-box h4 {
-      font-size: 1.3rem; } }
+      font-size: 1.3rem; }
+  #story {
+    height: 440px; }
+    #story .container .left-box {
+      height: 440px; }
+      #story .container .left-box .left-box-container .text {
+        padding-left: 20px; }
+        #story .container .left-box .left-box-container .text .pre-title {
+          font-size: .6rem; }
+        #story .container .left-box .left-box-container .text .title {
+          font-size: 1.6rem; }
+        #story .container .left-box .left-box-container .text .info {
+          line-height: 1.9;
+          font-size: .8rem;
+          font-weight: 400;
+          letter-spacing: 2px;
+          width: 95%; }
+        #story .container .left-box .left-box-container .text .btn-reservation {
+          padding: 15px 20px;
+          width: 120px;
+          margin-left: 0px;
+          bottom: 0px;
+          font-size: .8rem; }
+    #story .container .right-box {
+      height: 440px; }
+      #story .container .right-box .story-img {
+        width: 320px;
+        height: 440px; } }
 
 @media screen and (max-width: 768px) {
   #home .container .logo {
@@ -442,17 +493,40 @@
     #home .text-box h2 {
       font-size: 2.5rem; }
     #home .text-box h4 {
-      font-size: 1.1rem; } }
+      font-size: 1.1rem; }
+  #story {
+    height: 358px; }
+    #story .container .left-box {
+      height: 358px; }
+      #story .container .left-box .left-box-container .text {
+        padding-left: 5px; }
+        #story .container .left-box .left-box-container .text .pre-title {
+          font-size: .5rem;
+          margin: 0; }
+        #story .container .left-box .left-box-container .text .title {
+          font-size: 1.1rem; }
+        #story .container .left-box .left-box-container .text .info {
+          line-height: 1.9;
+          font-size: .65rem;
+          letter-spacing: 1.5px; }
+        #story .container .left-box .left-box-container .text .btn-reservation {
+          padding: 10px 15px;
+          width: 90px;
+          bottom: 0px;
+          font-size: .6rem; }
+    #story .container .right-box {
+      height: 358px; }
+      #story .container .right-box .story-img {
+        width: 260px;
+        height: 358px; } }
 
 @media screen and (max-width: 500px) {
   #home .container .logo {
     width: 80px; }
-  #home .container .menu-nav {
-    width: 100vw; }
-    #home .container .menu-nav label {
-      font-size: 2.5rem; }
-    #home .container .menu-nav .menu a {
-      width: 100%; }
+  #home .container .menu-nav label {
+    font-size: 2.5rem; }
+  #home .container .menu-nav .menu a {
+    width: 100%; }
   #home .text-box {
     width: 100vw;
     text-align: center; }
@@ -460,7 +534,30 @@
       font-size: 2.6rem;
       line-height: 3.5rem; }
     #home .text-box h4 {
-      font-size: 1.3rem; } }
+      font-size: 1.3rem; }
+  #story {
+    height: 550px;
+    padding: 50px 40px; }
+    #story .container .left-box {
+      height: 550px;
+      width: 100%; }
+      #story .container .left-box .left-box-container .text {
+        padding-left: 5px; }
+        #story .container .left-box .left-box-container .text .pre-title {
+          font-size: .6rem;
+          margin: .5em 0; }
+        #story .container .left-box .left-box-container .text .title {
+          font-size: 1.5rem; }
+        #story .container .left-box .left-box-container .text .info {
+          line-height: 2;
+          font-size: .9rem;
+          letter-spacing: 1.5px; }
+        #story .container .left-box .left-box-container .text .btn-reservation {
+          padding: 15px 20px;
+          width: 100px;
+          font-size: .7rem; }
+    #story .container .right-box {
+      display: none; } }
 
 html,
 body {
