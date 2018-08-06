@@ -27,6 +27,8 @@
 // Wide Screens
 
 @include mediaXL {
+
+    // Our Story Section
     #story {
         padding: 100px 20px;
         height: 600px;
@@ -61,11 +63,21 @@
             }
         }
     }
+
+    // Menu Section
+    #menu {
+        .container {
+            width: 90%;
+        }
+    }
+
 }
 
 
 // Desktops & Laptops
 @include mediaLg {
+
+    // Home Page
     #home {
         .menu-full {
             display: none;
@@ -111,6 +123,8 @@
         }
     }
 
+
+    // Our Story Section
     #story {
         height: 440px;
         
@@ -161,12 +175,85 @@
             }
         }
     }
+
+    // Menu Section
+    #menu {
+        padding-bottom: 100px;
+
+        .container {
+            width: 95%;
+
+            .header-box {
+
+                .pre-title {
+                    font-size: 0.65rem;
+                }
+
+                .title {
+                    font-size: 1.7rem;
+                }
+            }
+    
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 20px;
+                align-content: space-around;
+    
+                .item {
+                    padding: 15px;
+                    height: 300px;
+                    width: 90%;
+
+    
+                    .details {
+                        text-align: center;
+                        padding-top: 45px;
+    
+                        h5 {
+                            font-size: .9rem;
+                            line-height: 2rem;
+                        }
+    
+                        h6 {
+                            font-size: .7rem;
+                            line-height: 1.5;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+    
+                .img-container {
+                    height: 150px;
+    
+                    .price {
+                        border-radius: 50%;
+                        width: 80px;
+                        height: 80px;
+                        line-height: 80px;
+                        font-size: 1.5rem;
+                        margin: 0 auto;              
+    
+                    }
+                } 
+            }
+    
+    
+            .view-menu {
+                border-radius: 200px;
+                width: 140px;
+                padding: 10px 20px;
+                margin-top: 65px;
+            }
+        }
+    }
 }
 
 // Tablets & Small Laptops
 @include mediaMd {
-    #home {
 
+    // Home Page
+    #home {
         .container {
             .logo {
                 width: 100px;
@@ -178,8 +265,6 @@
                     font-size: 2.8rem;
                 }
             }
-
-           
         }
 
         .text-box {
@@ -196,6 +281,7 @@
         }
     }
 
+    // Our Story
     #story {
         height: 358px;
         
@@ -243,7 +329,63 @@
                 }
             }
         }
-    } 
+    }
+    
+    // Menu Section
+    #menu {
+        padding: 50px 0;
+        height: 100%;
+
+        .container {
+            width: 100%;
+
+            .header-box {
+                .pre-title {
+                    font-size: 0.65rem;
+                }
+
+                .title {
+                    font-size: 1.6rem;
+                }
+            }
+    
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-gap: 30px;
+    
+                .item {
+                    height: 380px;
+                    width: 60%;
+    
+                    .details {
+    
+                        h5 {
+                            font-size: 1rem;
+                        }
+    
+                        h6 {
+                            font-size: .8rem;
+                            letter-spacing: 0;
+                        }
+                    }
+                }
+    
+                .img-container {
+                    height: 250px;
+                } 
+            }
+    
+    
+            .view-menu {
+                border-radius: 200px;
+                width: 140px;
+                padding: 10px 20px;
+                margin-top: 40px;
+            }
+        }
+    }
 }
 
 
@@ -325,6 +467,59 @@
     
             .right-box {
                 display: none;
+            }
+        }
+    }
+
+    // Menu Section
+    #menu {
+        padding: 50px 0;
+
+        .container {
+            width: 100%;
+
+            .header-box {
+                .pre-title {
+                    font-size: 0.6rem;
+                }
+
+                .title {
+                    font-size: 1.5rem;
+                    padding: 0 20px;
+                }
+            }
+    
+            .grid-container {
+    
+                .item {
+                    height: 380px;
+                    width: 70%;
+    
+                    .details {
+    
+                        h5 {
+                            font-size: .9rem;
+                        }
+    
+                        h6 {
+                            font-size: .7rem;
+                            letter-spacing: 0;
+                        }
+                    }
+                }
+    
+                .img-container {
+                    height: 250px;
+                } 
+            }
+    
+    
+            .view-menu {
+                border-radius: 200px;
+                width: 140px;
+                padding: 10px 20px;
+                margin-top: 40px;
+                font-size: .9rem;
             }
         }
     }
