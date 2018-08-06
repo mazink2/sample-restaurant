@@ -71,6 +71,11 @@
         }
     }
 
+    // Gallery Section
+    #gallery {
+        height: 500px;
+    }
+
 }
 
 
@@ -247,6 +252,11 @@
             }
         }
     }
+
+    // Gallery Section
+    #gallery {
+        height: 350px;
+    }
 }
 
 // Tablets & Small Laptops
@@ -386,6 +396,18 @@
             }
         }
     }
+
+    // Gallery Section
+    #gallery {
+        height: 300px;
+
+        .pictures {
+            .img {
+                opacity: 1;
+                transform: scale(1.03);
+            }
+        }
+    }
 }
 
 
@@ -490,9 +512,7 @@
             }
     
             .grid-container {
-    
                 .item {
-                    height: 380px;
                     width: 70%;
     
                     .details {
@@ -503,23 +523,26 @@
     
                         h6 {
                             font-size: .7rem;
-                            letter-spacing: 0;
                         }
                     }
                 }
-    
-                .img-container {
-                    height: 250px;
-                } 
             }
     
-    
             .view-menu {
-                border-radius: 200px;
-                width: 140px;
-                padding: 10px 20px;
-                margin-top: 40px;
                 font-size: .9rem;
+            }
+        }
+    }
+
+    // Gallery Section
+    #gallery {
+        height: 600px;
+    
+        .pictures {
+            grid-template-rows: 1fr 1fr;
+    
+            .row {
+                grid-template-columns: 1fr 1fr;
             }
         }
     }

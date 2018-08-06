@@ -430,7 +430,9 @@
     #story .container .right-box {
       height: 540px; }
   #menu .container {
-    width: 90%; } }
+    width: 90%; }
+  #gallery {
+    height: 500px; } }
 
 @media screen and (max-width: 991px) {
   #home .menu-full {
@@ -522,7 +524,9 @@
         border-radius: 200px;
         width: 140px;
         padding: 10px 20px;
-        margin-top: 65px; } }
+        margin-top: 65px; }
+  #gallery {
+    height: 350px; } }
 
 @media screen and (max-width: 768px) {
   #home .container .logo {
@@ -590,7 +594,12 @@
         border-radius: 200px;
         width: 140px;
         padding: 10px 20px;
-        margin-top: 40px; } }
+        margin-top: 40px; }
+  #gallery {
+    height: 300px; }
+    #gallery .pictures .img {
+      opacity: 1;
+      transform: scale(1.03); } }
 
 @media screen and (max-width: 500px) {
   #home .container .logo {
@@ -640,21 +649,19 @@
         font-size: 1.5rem;
         padding: 0 20px; }
       #menu .container .grid-container .item {
-        height: 380px;
         width: 70%; }
         #menu .container .grid-container .item .details h5 {
           font-size: .9rem; }
         #menu .container .grid-container .item .details h6 {
-          font-size: .7rem;
-          letter-spacing: 0; }
-      #menu .container .grid-container .img-container {
-        height: 250px; }
+          font-size: .7rem; }
       #menu .container .view-menu {
-        border-radius: 200px;
-        width: 140px;
-        padding: 10px 20px;
-        margin-top: 40px;
-        font-size: .9rem; } }
+        font-size: .9rem; }
+  #gallery {
+    height: 600px; }
+    #gallery .pictures {
+      grid-template-rows: 1fr 1fr; }
+      #gallery .pictures .row {
+        grid-template-columns: 1fr 1fr; } }
 
 html,
 body {
