@@ -1,0 +1,149 @@
+// Media Query Mixins
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+
+// Desktops & Laptops
+@include mediaLg {
+    #home {
+
+
+        .menu-full {
+            display: none;
+        }
+
+        .container {
+
+            .menu-nav {
+
+                label {
+                    display: inline-block;
+                    cursor: pointer;
+                }
+
+                #toggle:checked + .menu {
+                    display: block;
+                }
+
+                .menu {
+                    text-align: center;
+                    width: 100%;
+                    // display: none;
+                    
+                    a {
+                        display: block;
+                        margin: 0;
+
+                        background-color: rgba(34, 34, 34, 0.89);
+                        color: rgb(255, 255, 255);
+                        width: 200px;
+                    }
+                }
+            }
+        }
+
+        .text-box {
+            width: 60vw;
+    
+            h2 {
+                font-size: 2.7rem;
+            }
+    
+            h4 {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+    #home {
+
+        .container {
+            .logo {
+                width: 100px;
+                padding: 20px;
+            }
+            
+            .menu-nav {
+                label {
+                    font-size: 2.8rem;
+                }
+            }
+
+           
+        }
+
+        .text-box {
+            width: 90vw;
+            text-align: center;
+    
+            h2 {
+                font-size: 2.5rem;
+            }
+    
+            h4 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+    
+}
+
+
+// Smartphones
+@include mediaSm {
+    #home {
+        .container {
+            .logo {
+                width: 80px;
+            }
+
+            .menu-nav {
+                // margin: 10px;
+                width: 100vw;
+                
+                label {
+                    font-size: 2.5rem;
+                }
+
+                .menu {
+                    a {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .text-box {
+            width: 100vw;
+            text-align: center;
+    
+            h2 {
+                font-size: 2.6rem;
+                line-height: 3.5rem;
+            }
+    
+            h4 {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+

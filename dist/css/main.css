@@ -5,23 +5,55 @@
   background-size: cover;
   height: 100vh;
   background-attachment: fixed; }
-  #home nav .logo {
-    width: 150px;
+  #home .container .logo {
+    width: 120px;
     display: inline-block;
-    padding: 20px; }
-  #home nav ul {
+    padding: 20px;
+    position: absolute; }
+  #home .container .menu-full {
+    float: right; }
+    #home .container .menu-full ul {
+      float: right;
+      padding-right: 40px;
+      padding-top: 10px; }
+    #home .container .menu-full li {
+      list-style: none;
+      display: inline-block;
+      padding: 10px; }
+    #home .container .menu-full a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 400; }
+  #home .container .menu-nav {
+    color: white;
     float: right;
-    padding-right: 40px;
-    padding-top: 10px; }
-  #home nav li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px; }
-  #home nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 400; }
+    text-align: right;
+    height: 70px;
+    line-height: 70px; }
+    #home .container .menu-nav label {
+      margin-right: 40px;
+      font-size: 3rem;
+      line-height: 70px;
+      display: none;
+      width: 26px;
+      padding: 20px; }
+    #home .container .menu-nav #toggle {
+      display: none; }
+    #home .container .menu-nav .menu {
+      display: none;
+      transition: all 0.4s ease-in; }
+      #home .container .menu-nav .menu a {
+        text-decoration: none;
+        background-color: rgba(34, 34, 34, 0.89);
+        color: white;
+        margin: 0 10px;
+        font-weight: 400;
+        width: 200px;
+        font-size: 1.2rem;
+        position: relative;
+        z-index: 5;
+        clear: right; }
   #home .text-box {
     position: absolute;
     top: 50%;
@@ -29,7 +61,8 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: #ebeed9;
-    width: 50%; }
+    width: 50%;
+    z-index: 0; }
     #home .text-box h2 {
       font-size: 3rem;
       margin: 0;
@@ -198,7 +231,8 @@
       z-index: 0;
       transform: scale(1.15);
       opacity: 0.75;
-      background-color: #123; }
+      background-color: #123;
+      transition: all 0.5s ease-in-out; }
       #gallery .pictures .img.img1 {
         background: url(../img/gallery1.jpg); }
       #gallery .pictures .img.img2 {
@@ -217,8 +251,7 @@
         background: url(../img/gallery8.jpg); }
       #gallery .pictures .img:hover {
         opacity: 1;
-        transform: scale(1.03);
-        transition: all 0.3s ease-in-out; }
+        transform: scale(1.03); }
 
 #review {
   padding: 100px 20px;
@@ -226,7 +259,7 @@
   height: 700px;
   background-color: white; }
   #review .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto; }
     #review .container .right-box {
       float: right;
@@ -259,7 +292,6 @@
       float: left;
       width: 45%;
       height: 700px;
-      margin-left: 5%;
       position: relative;
       overflow-x: visible; }
       #review .container .left-box .review-img {
@@ -373,6 +405,62 @@
             background-color: #f7f5f3;
             color: #5a5757;
             font-weight: 400; }
+
+@media screen and (max-width: 991px) {
+  #home .menu-full {
+    display: none; }
+  #home .container .menu-nav label {
+    display: inline-block;
+    cursor: pointer; }
+  #home .container .menu-nav #toggle:checked + .menu {
+    display: block; }
+  #home .container .menu-nav .menu {
+    text-align: center;
+    width: 100%; }
+    #home .container .menu-nav .menu a {
+      display: block;
+      margin: 0;
+      background-color: rgba(34, 34, 34, 0.89);
+      color: white;
+      width: 200px; }
+  #home .text-box {
+    width: 60vw; }
+    #home .text-box h2 {
+      font-size: 2.7rem; }
+    #home .text-box h4 {
+      font-size: 1.3rem; } }
+
+@media screen and (max-width: 768px) {
+  #home .container .logo {
+    width: 100px;
+    padding: 20px; }
+  #home .container .menu-nav label {
+    font-size: 2.8rem; }
+  #home .text-box {
+    width: 90vw;
+    text-align: center; }
+    #home .text-box h2 {
+      font-size: 2.5rem; }
+    #home .text-box h4 {
+      font-size: 1.1rem; } }
+
+@media screen and (max-width: 500px) {
+  #home .container .logo {
+    width: 80px; }
+  #home .container .menu-nav {
+    width: 100vw; }
+    #home .container .menu-nav label {
+      font-size: 2.5rem; }
+    #home .container .menu-nav .menu a {
+      width: 100%; }
+  #home .text-box {
+    width: 100vw;
+    text-align: center; }
+    #home .text-box h2 {
+      font-size: 2.6rem;
+      line-height: 3.5rem; }
+    #home .text-box h4 {
+      font-size: 1.3rem; } }
 
 html,
 body {

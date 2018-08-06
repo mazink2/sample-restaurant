@@ -6,31 +6,79 @@
     height: 100vh;
     background-attachment: fixed;
 
-    nav {
+    .container {
         .logo {
-            width: 150px;
+            width: 120px;
             display: inline-block;
             padding: 20px;
+            position: absolute;
         }
 
-        ul {
+        .menu-full {
             float: right;
-            padding-right: 40px;
-            padding-top: 10px;
+            // display: none; 
+
+            ul {
+                float: right;
+                padding-right: 40px;
+                padding-top: 10px;
+            }
+    
+            li {
+                list-style: none;
+                display: inline-block;
+                padding: 10px;
+            }
+    
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
         }
 
-        li {
-            list-style: none;
-            display: inline-block;
-            padding: 10px;
+        .menu-nav {
+            color: white;
+            float: right;
+            // font-size: 3rem;
+            // margin: 20px;
+            text-align: right;
+            height: 70px;
+            line-height: 70px;
+
+            label {
+                margin-right: 40px;
+                font-size: 3rem;
+                line-height: 70px;
+                display: none;
+                width: 26px;
+                padding: 20px;
+            }
+
+            #toggle {
+                display: none;
+            }
+
+            .menu {
+                display: none;
+                transition: all 0.4s ease-in;
+
+                a {
+                    text-decoration: none;
+                    background-color: rgba(34, 34, 34, 0.89);
+                    color: rgb(255, 255, 255);
+                    margin: 0 10px;
+                    font-weight: 400;
+                    width: 200px;
+                    font-size: 1.2rem;
+                    position: relative;
+                    z-index: 5;
+                    clear: right;
+                }
+            }
         }
 
-        a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 1.2rem;
-            font-weight: 400;
-        }
     }
 
     .text-box {
@@ -41,6 +89,7 @@
         transform: translate(-50%,-50%);
         color: rgb(235, 238, 217);
         width: 50%;
+        z-index: 0;
 
         h2 {
             font-size: 3rem;
