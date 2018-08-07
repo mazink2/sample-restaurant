@@ -567,6 +567,57 @@
         }
     }
 
+    // Review Section
+    #review {
+        height: 100%;
+        
+        .container {
+            margin-top: 0px;
+            display: grid;
+             .left-box {
+                height: 538px;
+                width: 100%;
+                 .review-img {
+                    width: 300px;
+                    height: 538px;
+                    position: relative;
+                    margin: 0 auto;
+                }
+            }
+    
+            .right-box {
+                height: 480px;
+                width: 100%;
+                order: -1;
+                 .right-box-container {
+                    text-align: left;
+                     .pre-title {
+                        margin-top: 50px;
+                        font-size: 0.55rem;
+                    }
+                     .title {
+                        font-size: 1.3rem;
+                    }
+        
+                    .quote {
+                        font-size: .9rem;
+                        margin: 5px 0 5px 0;
+                    }
+        
+                    .info {
+                        margin-top: 10px;
+                        line-height: 1.8;
+                        font-size: .9rem;
+                    }
+        
+                    .name {
+                        font-size: .9rem;
+                    }
+                }   
+            }
+        }
+    }
+
     // Promo Section
     #promo {
         padding: 40px 20px;
@@ -677,6 +728,37 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    // Footer Section
+    footer {
+
+        .links ul li {
+            width: 100%;
+            padding: 0;
+            margin: 10px 0;
+        }
+    
+        ul {
+            margin: 0;
+        }
+    
+        .social {
+            margin-top: 0px;
+            margin-top: 30px !important;
+
+        }
+    
+        .copystrike {
+            margin-bottom: 40px;
+            padding-top: 30px !important;
+
+            p {
+                line-height: 1.5;
+                padding: 0 20px;
+                margin: .5em 0;
             }
         }
     }
@@ -840,7 +922,7 @@
             }
     
             .right-box {
-                height: 640px;
+                height: 620px;
                 width: 100%;
                 order: -1;
 
@@ -919,11 +1001,11 @@
             }
 
             .box5 {
-                order: 5;
+                order: 5 !important;
             }
 
             .box6 {
-                order: 4;
+                order: 4 !important;
             }
         }
     }
@@ -985,6 +1067,50 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    // Footer Section
+    footer {
+    
+        .logo {
+            width: 100px !important;
+            height: 100px !important;
+        }
+
+        .links ul li {
+            margin: 5px 0;
+        }
+    
+        ul {
+            margin: 0;
+    
+            li {
+                display: block;
+                padding: 0 10px !important;
+                
+    
+                a {
+                    font-size: 1.3rem !important;
+                }
+
+            }
+        }
+    
+        .social {
+            margin-top: 0px;
+            margin-top: 30px !important;
+
+        }
+    
+        .copystrike {
+            margin-bottom: 40px;
+            padding-top: 30px !important;
+            // font-size: .9rem;
+
+            p {
+                font-size: .9em;
             }
         }
     }

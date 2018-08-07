@@ -52,14 +52,14 @@ h5, h6 {
 
 footer {
 	background-color: #131a23;
-	height: 400px;
+	height: 100%;
 	padding-top: 50px;
 
 	.logo {
 		width: 120px;
 		height: 120px;
 		margin: 0 auto;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 
 		img {
 			width: 100%;
@@ -95,7 +95,7 @@ footer {
 	}
 
 	.copystrike {
-		padding-top: 40px;
+		padding-top: 20px;
 		text-align: center;
 		line-height: .8;
 		font-weight: 400;
