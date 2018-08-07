@@ -424,27 +424,35 @@
     #home {
         .container {
             .logo {
-                width: 100px;
-                padding: 20px;
+                width: 80px;
             }
-            
-            .menu-nav {
+             .menu-nav {
+                // margin: 10px;
+                width: 100vw;
+                
                 label {
-                    font-size: 2.8rem;
+                    font-size: 2.5rem;
+                }
+                 .menu {
+                    a {
+                        width: 100%;
+                        font-size: 1.5em;
+                        line-height: 4em;
+                    }
                 }
             }
         }
-
         .text-box {
-            width: 90vw;
+            width: 100vw;
             text-align: center;
     
             h2 {
-                font-size: 2.5rem;
+                font-size: 2.6rem;
+                line-height: 3.5rem;
             }
     
             h4 {
-                font-size: 1.1rem;
+                font-size: 1.3rem;
             }
         }
     }
@@ -774,7 +782,7 @@
             }
 
             .menu-nav {
-                // width: 100vw;
+                width: 100vw;
                 
                 label {
                     font-size: 2.5rem;
@@ -783,6 +791,8 @@
                 .menu {
                     a {
                         width: 100%;
+                        font-size: 1em;
+                        line-height: 3.5em;
                     }
                 }
             }

@@ -613,17 +613,23 @@
 
 @media screen and (max-width: 768px) {
   #home .container .logo {
-    width: 100px;
-    padding: 20px; }
-  #home .container .menu-nav label {
-    font-size: 2.8rem; }
+    width: 80px; }
+  #home .container .menu-nav {
+    width: 100vw; }
+    #home .container .menu-nav label {
+      font-size: 2.5rem; }
+    #home .container .menu-nav .menu a {
+      width: 100%;
+      font-size: 1.5em;
+      line-height: 4em; }
   #home .text-box {
-    width: 90vw;
+    width: 100vw;
     text-align: center; }
     #home .text-box h2 {
-      font-size: 2.5rem; }
+      font-size: 2.6rem;
+      line-height: 3.5rem; }
     #home .text-box h4 {
-      font-size: 1.1rem; }
+      font-size: 1.3rem; }
   #story {
     height: 358px; }
     #story .container .left-box {
@@ -793,10 +799,14 @@
 @media screen and (max-width: 500px) {
   #home .container .logo {
     width: 80px; }
-  #home .container .menu-nav label {
-    font-size: 2.5rem; }
-  #home .container .menu-nav .menu a {
-    width: 100%; }
+  #home .container .menu-nav {
+    width: 100vw; }
+    #home .container .menu-nav label {
+      font-size: 2.5rem; }
+    #home .container .menu-nav .menu a {
+      width: 100%;
+      font-size: 1em;
+      line-height: 3.5em; }
   #home .text-box {
     width: 100vw;
     text-align: center; }
