@@ -287,7 +287,7 @@
         font-weight: 400;
         letter-spacing: 2px; }
       #review .container .right-box .name {
-        margin-top: 75px; }
+        margin-top: 45px; }
         #review .container .right-box .name strong {
           color: #000; }
         #review .container .right-box .name em {
@@ -303,13 +303,13 @@
         background: url(../img/chef.png);
         background-position: center center;
         background-size: cover;
-        width: 500px;
-        height: 650px;
+        width: 391px;
+        height: 700px;
         margin: auto auto;
         position: absolute;
         bottom: 0;
         -webkit-filter: drop-shadow(5px 5px 5px #222);
-        filter: drop-shadow(30px -15px 35px rgba(204, 195, 195, 0.918)); }
+        filter: drop-shadow(30px -10px 25px rgba(204, 195, 195, 0.918)); }
 
 #promo {
   padding: 80px 20px;
@@ -526,7 +526,37 @@
         padding: 10px 20px;
         margin-top: 65px; }
   #gallery {
-    height: 350px; } }
+    height: 350px; }
+  #review {
+    height: 650px;
+    padding: 0 10px 0 0; }
+    #review .container {
+      height: 100%;
+      width: 100%; }
+      #review .container .left-box {
+        height: 650px; }
+        #review .container .left-box .review-img {
+          width: 320px;
+          height: 574px;
+          margin-left: 40px; }
+      #review .container .right-box {
+        height: 650px; }
+        #review .container .right-box .right-box-container {
+          padding-right: 20px;
+          padding-left: 30px; }
+          #review .container .right-box .right-box-container .pre-title {
+            margin-top: 100px;
+            font-size: 0.6rem; }
+          #review .container .right-box .right-box-container .title {
+            font-size: 1.6rem; }
+          #review .container .right-box .right-box-container .quote {
+            padding: 0; }
+          #review .container .right-box .right-box-container .info {
+            line-height: 1.9;
+            font-size: .9rem;
+            letter-spacing: 1.5px; }
+          #review .container .right-box .right-box-container .name {
+            margin-top: 25px; } }
 
 @media screen and (max-width: 768px) {
   #home .container .logo {
@@ -661,7 +691,40 @@
     #gallery .pictures {
       grid-template-rows: 1fr 1fr; }
       #gallery .pictures .row {
-        grid-template-columns: 1fr 1fr; } }
+        grid-template-columns: 1fr 1fr; }
+  #review {
+    height: 100%; }
+    #review .container {
+      margin-top: 0px;
+      display: grid; }
+      #review .container .left-box {
+        height: 538px;
+        width: 100%; }
+        #review .container .left-box .review-img {
+          width: 300px;
+          height: 538px;
+          position: relative;
+          margin: 0 auto; }
+      #review .container .right-box {
+        height: 640px;
+        width: 100%;
+        order: -1; }
+        #review .container .right-box .right-box-container {
+          text-align: left; }
+          #review .container .right-box .right-box-container .pre-title {
+            margin-top: 50px;
+            font-size: 0.55rem; }
+          #review .container .right-box .right-box-container .title {
+            font-size: 1.3rem; }
+          #review .container .right-box .right-box-container .quote {
+            font-size: .9rem;
+            margin: 5px 0 5px 0; }
+          #review .container .right-box .right-box-container .info {
+            margin-top: 10px;
+            line-height: 1.8;
+            font-size: .9rem; }
+          #review .container .right-box .right-box-container .name {
+            font-size: .9rem; } }
 
 html,
 body {

@@ -38,7 +38,7 @@
             }
 
             .name {
-                margin-top: 75px;
+                margin-top: 45px;
 
                 strong {
                     color: #000;
@@ -55,22 +55,20 @@
             float: left;
             width: 45%;
             height: 700px;
-            // margin-left: 5%;
             position: relative;
-            // overflow: hidden;
             overflow-x: visible;
 
             .review-img {
                 background: url(../img/chef.png);
                 background-position: center center;
                 background-size: cover;
-                width: 500px;
-                height: 650px;
+                width: 391px;
+                height: 700px;
                 margin: auto auto;
                 position: absolute;
                 bottom: 0;
                 -webkit-filter: drop-shadow(5px 5px 5px #222);
-                filter: drop-shadow(30px -15px 35px rgba(204, 195, 195, 0.918)); 
+                filter: drop-shadow(30px -10px 25px rgba(204, 195, 195, 0.918)); 
             }
         }
     }
