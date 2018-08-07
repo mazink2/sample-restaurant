@@ -75,6 +75,46 @@
         height: 500px;
     }
 
+    // Promo Section
+    #promo {
+    
+        .header-box {
+    
+            .pre-title {
+                font-size: .65rem;
+            }
+
+            .title {
+                font-size: 1.7rem;
+            }
+        }
+    
+        .container {
+            width: 900px;
+            margin-top: 30px;
+    
+            .grid-container {
+                height: 600px;
+                width: 900px;
+    
+                .details {
+                    padding: 20px;
+    
+                    h4 {
+                        font-size: 1.3rem;
+                    }
+    
+                    .dashes {
+                        padding: 0;
+                    }
+    
+                    .location {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
     
 }
 
@@ -310,6 +350,71 @@
             }
         }
     }
+
+    // Promo Section
+    #promo {
+        padding: 60px 20px;
+
+        .header-box {
+            text-align: center;
+    
+            .pre-title {
+                font-size: .6rem;
+            }
+
+            .title {
+                font-size: 1.6rem;
+            }
+        }
+    
+        .container {
+            display: block;
+            margin: 0 auto;
+            width: 690px;
+            margin-top: 30px;
+    
+            .grid-container {
+                height: 460px;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                overflow: hidden;
+                width: 690px;
+    
+                .row {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+    
+                .img {
+                    width: 100%;
+                    height: 100%;
+                }
+    
+                .details {
+                    padding: 20px 10px;
+    
+                    h4 {
+                        font-size: 1.1rem;
+                        margin: 0;
+                    }
+    
+                    .dashes {
+                        margin: 0;
+                        margin-bottom: 15px
+                    }
+    
+                    .location {
+                        font-size: .7rem;
+
+                        p {
+                            margin: .5em 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 // Tablets & Small Laptops
@@ -458,6 +563,74 @@
             .img {
                 opacity: 1;
                 transform: scale(1.03);
+            }
+        }
+    }
+
+    // Promo Section
+    #promo {
+        padding: 40px 20px;
+
+        .header-box {
+    
+            .pre-title {
+                font-size: .5rem;
+            }
+
+            .title {
+                font-size: 1.4rem;
+            }
+        }
+    
+        .container {
+            width: 460px;
+            margin-top: 20px;
+    
+            .grid-container {
+                height: 690px;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+
+                width: 460px;
+    
+                .details {
+                    padding: 20px 10px;
+    
+                    h4 {
+                        font-size: 1.1rem;
+                    }
+    
+                    .dashes {
+                        margin-bottom: 15px;
+                        margin-top: 5px;
+                    }
+    
+                    .location {
+                        font-size: .7rem;
+
+                        p {
+                            margin: .5em 0;
+                        }
+                    }
+                }
+
+                .box3 {
+                    order: 3;
+                }
+
+                .box4 {
+                    order: 2;
+                    padding-top: 40px;
+                }
+
+                .box5 {
+                    order: 4;
+                }
+
+                .box6 {
+                    order: 5;
+                }
             }
         }
     }
@@ -652,6 +825,59 @@
                         font-size: .9rem;
                     }
                 }   
+            }
+        }
+    }
+
+    // Promo Section
+    #promo {
+        padding: 40px 20px;
+
+        .header-box {
+    
+            .pre-title {
+                font-size: .45rem;
+            }
+
+            .title {
+                font-size: 1.2rem;
+            }
+        }
+    
+        .container {
+            width: 230px;
+            margin-top: 15px;
+    
+            .grid-container {
+                height: 1380px;
+                grid-template-rows: repeat(6, 1fr);
+                grid-template-columns: 1fr;
+                width: 230px;
+            }
+
+            .box1 {
+                order: 1
+            }
+
+            .box2 {
+                order: 0;
+            }
+
+            .box3 {
+                order: 3;
+            }
+
+            .box4 {
+                order: 2;
+                padding-top: 40px;
+            }
+
+            .box5 {
+                order: 5;
+            }
+
+            .box6 {
+                order: 4;
             }
         }
     }
