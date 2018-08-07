@@ -153,7 +153,7 @@
         #menu .container .grid-container .item.item1 .img-container {
           background: url(../img/item1.jpg); }
         #menu .container .grid-container .item.item2 .img-container {
-          background: url(../img/item2-min2.jpg); }
+          background: url(../img/item2.jpg); }
         #menu .container .grid-container .item.item3 .img-container {
           background: url(../img/item3.jpg); }
         #menu .container .grid-container .item .details {
@@ -245,7 +245,7 @@
       #gallery .pictures .img.img3 {
         background: url(../img/gallery3.jpg); }
       #gallery .pictures .img.img4 {
-        background: url(../img/gallery4.jpg); }
+        background: url(../img/item2.jpg); }
       #gallery .pictures .img.img5 {
         background: url(../img/gallery5.jpg); }
       #gallery .pictures .img.img6 {
