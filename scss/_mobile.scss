@@ -634,6 +634,52 @@
             }
         }
     }
+
+    // Contact Section
+    #contact {
+        padding: 0 20px;
+        height: 100%;
+        padding-bottom: 60px;
+    
+        .header-box {
+            text-align: center;
+    
+            .pre-title {
+                font-size: .4rem;
+            }
+            .title {
+                font-size: 1.4rem;
+                margin-bottom: 15px;
+            }
+        }
+    
+        .form-container {
+            width: 400px;
+    
+            .contact-form {
+    
+                .row {
+                    margin: 20px 0;
+        
+                    .labels {
+                        display: inline-block;
+                        
+                        label {
+                            vertical-align: middle;
+                        }
+                    }
+                    
+                    .fields {
+    
+                        select {
+                            padding: 7px;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -878,6 +924,67 @@
 
             .box6 {
                 order: 4;
+            }
+        }
+    }
+
+    // Contact Section
+    #contact {
+        padding: 0 10px;
+        height: 100%;
+        padding-bottom: 50px;
+    
+        .header-box {
+    
+            .pre-title {
+                font-size: .45rem;
+            }
+            .title {
+                font-size: 1.2rem;
+            }
+        }
+    
+        .form-container {
+            width: 65%;
+            padding: 5px 20px;
+    
+            .contact-form {
+    
+                .row {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+                    margin: 20px;
+        
+                    .labels {
+                        
+                        label {
+                            vertical-align: middle;
+                        }
+
+                        &.blank-label {
+                            display: none;
+                        }
+                    }
+                    
+                    .fields {
+                        
+                        input {
+                            margin-top: 10px;
+                        }
+    
+                        select {
+                            margin-top: 10px;
+                        }
+    
+                        textarea {
+                            margin-top: 10px;
+                        }
+    
+                        input[type=submit] {
+                            margin: 0 auto;
+                        }
+                    }
+                }
             }
         }
     }

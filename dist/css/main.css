@@ -362,14 +362,15 @@
 
 #contact {
   padding: 0 20px;
-  height: 650px; }
+  height: 100%;
+  padding-bottom: 85px; }
   #contact .header-box {
     text-align: center; }
     #contact .header-box .title {
       color: #161414;
-      margin-bottom: 50px; }
+      margin-bottom: 30px; }
   #contact .form-container {
-    width: 600px;
+    width: 550px;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.801);
     padding: 20px 40px;
@@ -387,12 +388,12 @@
         #contact .form-container .contact-form .row .fields {
           display: inline-block; }
           #contact .form-container .contact-form .row .fields input {
-            width: 100%;
+            width: 97%;
             padding: 7px; }
           #contact .form-container .contact-form .row .fields select {
             padding: 7px; }
           #contact .form-container .contact-form .row .fields textarea {
-            width: 100%;
+            width: 97%;
             height: 80px;
             padding: 7px; }
           #contact .form-container .contact-form .row .fields input[type=submit] {
@@ -716,7 +717,29 @@
         #promo .container .grid-container .box5 {
           order: 4; }
         #promo .container .grid-container .box6 {
-          order: 5; } }
+          order: 5; }
+  #contact {
+    padding: 0 20px;
+    height: 100%;
+    padding-bottom: 60px; }
+    #contact .header-box {
+      text-align: center; }
+      #contact .header-box .pre-title {
+        font-size: .4rem; }
+      #contact .header-box .title {
+        font-size: 1.4rem;
+        margin-bottom: 15px; }
+    #contact .form-container {
+      width: 400px; }
+      #contact .form-container .contact-form .row {
+        margin: 20px 0; }
+        #contact .form-container .contact-form .row .labels {
+          display: inline-block; }
+          #contact .form-container .contact-form .row .labels label {
+            vertical-align: middle; }
+        #contact .form-container .contact-form .row .fields select {
+          padding: 7px;
+          margin-top: 15px; } }
 
 @media screen and (max-width: 500px) {
   #home .container .logo {
@@ -838,7 +861,34 @@
       #promo .container .box5 {
         order: 5; }
       #promo .container .box6 {
-        order: 4; } }
+        order: 4; }
+  #contact {
+    padding: 0 10px;
+    height: 100%;
+    padding-bottom: 50px; }
+    #contact .header-box .pre-title {
+      font-size: .45rem; }
+    #contact .header-box .title {
+      font-size: 1.2rem; }
+    #contact .form-container {
+      width: 65%;
+      padding: 5px 20px; }
+      #contact .form-container .contact-form .row {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 20px; }
+        #contact .form-container .contact-form .row .labels label {
+          vertical-align: middle; }
+        #contact .form-container .contact-form .row .labels.blank-label {
+          display: none; }
+        #contact .form-container .contact-form .row .fields input {
+          margin-top: 10px; }
+        #contact .form-container .contact-form .row .fields select {
+          margin-top: 10px; }
+        #contact .form-container .contact-form .row .fields textarea {
+          margin-top: 10px; }
+        #contact .form-container .contact-form .row .fields input[type=submit] {
+          margin: 0 auto; } }
 
 html,
 body {
